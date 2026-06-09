@@ -445,101 +445,95 @@
         </div>
       </section>
 
-      <section id="quote">
-        <div class="sectionHead">
-          <div>
-            <h2>Request a Quote</h2>
-            <p>
-              This form can send requests to your email using a provider (Formspree) or Netlify Forms. Instructions are below.
-            </p>
-          </div>
-        </div>
+      <```html
+<section id="quote">
 
-        <div class="grid2">
-          <div class="card" style="padding:16px">
-            <!--
-              OPTION A (Recommended): Netlify Forms
-              - Works when deployed on Netlify.
-              - Keep the form exactly as-is and deploy to Netlify.
+<div class="sectionHead">
+  <div>
+    <h2>Request a Free Quote</h2>
+    <p>
+      Tell us about your project and we'll contact you as soon as possible.
+    </p>
+  </div>
+</div>
 
-              OPTION B: Formspree
-              - Replace action with your Formspree endpoint.
-              - Example: action="https://formspree.io/f/xxxxxx"
-            -->
-            <form id="quoteForm" name="quote" method="POST" data-netlify="true">
-              <input type="hidden" name="form-name" value="quote" />
+<div class="card" style="padding:20px; max-width:800px; margin:auto;">
 
-              <div>
-                <label for="q_name">Name</label>
-                <input id="q_name" name="name" autocomplete="name" required />
-              </div>
+<form action="https://formspree.io/f/xredrlvq" method="POST">
 
-              <div>
-                <label for="q_phone">Phone</label>
-                <input id="q_phone" name="phone" inputmode="tel" autocomplete="tel" placeholder="(602) 555-1234" required />
-              </div>
+<input
+  type="hidden"
+  name="_subject"
+  value="New Quote Request - Integrated Services">
 
-              <div>
-                <label for="q_email">Email</label>
-                <input id="q_email" name="email" type="email" autocomplete="email" placeholder="you@email.com" />
-              </div>
+<div>
+<label>Name</label>
+<input
+  type="text"
+  name="name"
+  placeholder="Your Name"
+  required>
+</div>
 
-              <div>
-                <label for="q_service">Service Type</label>
-                <select id="q_service" name="service" required>
-                  <option value="" selected disabled>Select one…</option>
-                  <option>Structured Cabling</option>
-                  <option>Security Cameras</option>
-                  <option>Network Setup</option>
-                  <option>TV Mounting</option>
-                  <option>Handyman Work</option>
-                  <option>Small Business Support</option>
-                </select>
-              </div>
+<div>
+<label>Phone Number</label>
+<input
+  type="tel"
+  name="phone"
+  placeholder="(480) 555-1234"
+  required>
+</div>
 
-              <div>
-                <label for="q_address">Job Location (City/Area)</label>
-                <input id="q_address" name="location" placeholder="City / Neighborhood" required />
-              </div>
+<div>
+<label>Email</label>
+<input
+  type="email"
+  name="email"
+  placeholder="you@email.com">
+</div>
 
-              <div>
-                <label for="q_details">Project Details</label>
-                <textarea id="q_details" name="details" placeholder="Describe what you need (how many drops/cameras, wall type, existing equipment, timeline, etc.)" required></textarea>
-              </div>
+<div>
+<label>Service Needed</label>
+<select name="service" required>
+  <option value="">Select a Service</option>
+  <option>Structured Cabling</option>
+  <option>Ethernet Drops</option>
+  <option>Security Cameras</option>
+  <option>TV Mounting</option>
+  <option>Smart Home Setup</option>
+  <option>Network / WiFi Setup</option>
+  <option>Handyman Services</option>
+</select>
+</div>
 
-              <div>
-                <label for="q_time">Preferred Schedule</label>
-                <input id="q_time" name="preferred_time" placeholder="Example: Weekdays after 4pm / Saturday morning" />
-              </div>
+<div>
+<label>City / Area</label>
+<input
+  type="text"
+  name="location"
+  placeholder="Phoenix, Glendale, Surprise, etc."
+  required>
+</div>
 
-              <button class="btn primary" type="submit">Submit Quote Request</button>
+<div>
+<label>Project Details</label>
+<textarea
+  name="message"
+  placeholder="Describe your project..."
+  required></textarea>
+</div>
 
-              <div class="success" id="quoteSuccess">Thanks—your request was submitted. We’ll get back to you shortly.</div>
-              <div class="error" id="quoteError">Something went wrong. Please try again or use the contact info below.</div>
+<button class="btn primary" type="submit">
+Request Free Estimate
+</button>
 
-              <p class="note" style="margin:0">
-                Tip: For faster quotes, include photos and measurements in the details.
-              </p>
-            </form>
-          </div>
+</form>
 
-          <div class="card" style="padding:16px">
-            <h3 style="margin:0 0 8px">Fast Quote Checklist</h3>
-            <p class="note" style="margin:0 0 10px">
-              Include these details to speed things up:
-            </p>
-            <ul class="note" style="margin:0; padding-left:18px">
-              <li>How many runs/drops or cameras?</li>
-              <li>Wall type: drywall, block, stucco, drop ceiling?</li>
-              <li>Distance (approx.) and pathway options (attic/soffit/conduit)?</li>
-              <li>Equipment you already have (router, NVR, cameras)?</li>
-              <li>Preferred date/time window</li>
-            </ul>
-            <div style="height:12px"></div>
-            <a class="btn" href="#contact">Contact Info</a>
-          </div>
-        </div>
-      </section>
+</div>
+
+</section>
+```
+
 
       <section id="booking">
         <div class="sectionHead">
